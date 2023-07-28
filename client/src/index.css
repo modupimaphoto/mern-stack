@@ -5,3 +5,41 @@
 	--grey: hsl(231, 7%, 60%);
 	--white: hsl(0, 0%, 100%);
 }
+
+.wrapper{
+	background-color: var(--charcoal-grey);
+	height: 100vh;
+	padding-top: 5%;
+}
+.card-wrapper div {
+	width: 60%;
+	margin: 0 auto;
+	border-radius: 12px;
+	background-color: var(--white);
+	padding: 10px;
+}
+.card-wrapper input{
+	padding: 8px 10px;
+}
+.custom-btn {
+	background-color: var(--dark-slate-grey)!important;
+	color: var(--white)!important;
+	width: 100%;
+	transition: .7s;
+}
+.custom-btn:hover {
+	background: linear-gradient(to right, rgb(255, 87, 137), var(--tomato));
+}
+@media screen and (max-width: 769px) {
+	.wrapper{
+		background-color: none;
+		height: auto;
+		padding-top: 0;
+	}
+	.card-wrapper div {
+		width: 100%;
+		background-color: none;
+		border-radius: 0;
+		padding: 0;
+	}
+}
