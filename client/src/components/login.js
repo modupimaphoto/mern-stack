@@ -17,11 +17,11 @@ const Login = () => {
 		}else{
 			const url = "http://localhost:5000/api/user";
 			axios.post(url, { email, password })
-			.then((response) => {
-				
+			.then(() => {
+				console.log("posted");
 			})
-			.catch(() => {
-				
+			.catch((error) => {
+				console.log(error);
 			})
 		}
 	}
@@ -53,7 +53,7 @@ const Login = () => {
 									<input type="submit" value="Login" className="btn custom-btn" />
 								</div>
 							</form>
-							<p>
+							<p className="text-center">
 								Create account. <Link to="/signup">Signup</Link>
 							</p>
 						</div>
